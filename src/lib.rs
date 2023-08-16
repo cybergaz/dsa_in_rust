@@ -19,6 +19,7 @@ pub mod common {
     pub mod linked_list {
         pub mod doubly;
         pub mod singly;
+        pub mod temp;
     }
     pub mod queue;
     pub mod stack;

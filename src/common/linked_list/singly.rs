@@ -206,14 +206,14 @@ impl<T: std::fmt::Debug + Copy> SinglyLinkedList<T> {
     pub fn view(&mut self) {
         // while let Some()
         println!("-----------------------------------------------------------------------------");
-        // println!("{:#?}", self.head);
+        println!("{:#?}", self.head);
 
-        let mut current = &mut self.head;
-        while let Some(node) = current {
-            print!("{:#?} -> ", node.data);
-            current = &mut node.next;
-        }
-        println!("None");
+        // let mut current = &mut self.head;
+        // while let Some(node) = current {
+        //     print!("{:#?} -> ", node.data);
+        //     current = &mut node.next;
+        // }
+        // println!("None");
         // println!("the length up until now is : {}", self.length / 2);
         println!("-----------------------------------------------------------------------------");
     }
@@ -229,20 +229,20 @@ fn testing() {
 
     list.view();
 
-    list.insert_at(37, 3);
-    // list.insert_at(38, 0);
-    // list.insert_at(39, 9);
-    list.view();
-
-    list.append(100);
-    list.view();
-
-    list.find_mid();
-    list.insert_mid(879);
-    list.view();
-
-    println!("hehe -- popped => {:#?}", list.pop_at(3).unwrap());
-    list.view();
+    // list.insert_at(37, 3);
+    // // list.insert_at(38, 0);
+    // // list.insert_at(39, 9);
+    // list.view();
+    //
+    // list.append(100);
+    // list.view();
+    //
+    // list.find_mid();
+    // list.insert_mid(879);
+    // list.view();
+    //
+    // println!("hehe -- popped => {:#?}", list.pop_at(3).unwrap());
+    // list.view();
 
     // let mut list = SinglyLinkedList::new();
     // list.prepend("heeh".to_string());
