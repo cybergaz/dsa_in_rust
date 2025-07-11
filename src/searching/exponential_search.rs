@@ -2,6 +2,9 @@ use std::cmp::min;
 
 use super::Status;
 
+use crate::common::linked_list::singly::SinglyLinkedList;
+use crate::DoublyLinkedList;
+
 // just start with a range of 1 (0-1)
 // treat the last element of the bound as upper bound and compare if element is greater or smaller
 // if element is greater then bound then increase the bounded area by x2

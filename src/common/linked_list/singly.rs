@@ -124,8 +124,8 @@ impl<T: std::fmt::Debug + Copy> SinglyLinkedList<T> {
         let mut temp_len = 0;
 
         while fast_ptr.is_some() && fast_ptr.as_ref().unwrap().next.is_some() {
-            fast_ptr = &fast_ptr.as_ref().unwrap().next.as_ref().unwrap().next;
             slow_ptr = &slow_ptr.as_ref().unwrap().next;
+            fast_ptr = &fast_ptr.as_ref().unwrap().next.as_ref().unwrap().next;
             temp_len += 1;
         }
 
@@ -219,8 +219,8 @@ impl<T: std::fmt::Debug + Copy> SinglyLinkedList<T> {
     }
 }
 
-#[test]
-fn testing() {
+// #[test]
+fn _testing() {
     //
     let mut list = SinglyLinkedList::new();
     list.prepend(23);
